@@ -1,0 +1,6 @@
+framework module Pods_ALK_challenge_ingreso_iOS {
+  umbrella header "Pods-ALK-challenge-ingreso-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

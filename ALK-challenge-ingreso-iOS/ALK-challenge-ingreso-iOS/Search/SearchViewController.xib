@@ -28,14 +28,14 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5jp-om-VE4">
-                    <rect key="frame" x="0.0" y="124" width="390" height="686"/>
+                    <rect key="frame" x="16" y="124" width="358" height="686"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqs-CE-xUk">
                     <rect key="frame" x="0.0" y="44" width="390" height="80"/>
                     <subviews>
                         <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Buscar em Mercado Livre" translatesAutoresizingMaskIntoConstraints="NO" id="3zC-Wd-T1O">
-                            <rect key="frame" x="16" y="15" width="358" height="51"/>
+                            <rect key="frame" x="16" y="14.666666666666664" width="358" height="50.999999999999993"/>
                             <color key="backgroundColor" systemColor="systemYellowColor"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -61,9 +61,9 @@
                 <constraint firstItem="2bV-ct-gmW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Her-qA-D1c"/>
                 <constraint firstAttribute="trailing" secondItem="2bV-ct-gmW" secondAttribute="trailing" id="UUY-GB-Tjd"/>
                 <constraint firstItem="wqs-CE-xUk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UYb-40-eni"/>
-                <constraint firstItem="5jp-om-VE4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dcQ-vY-E2w"/>
+                <constraint firstItem="5jp-om-VE4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="dcQ-vY-E2w"/>
                 <constraint firstItem="wqs-CE-xUk" firstAttribute="top" secondItem="2bV-ct-gmW" secondAttribute="bottom" id="h5W-sS-2ZV"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5jp-om-VE4" secondAttribute="trailing" id="kdT-lk-AWt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5jp-om-VE4" secondAttribute="trailing" constant="16" id="kdT-lk-AWt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5jp-om-VE4" secondAttribute="bottom" id="mJM-Lk-m43"/>
                 <constraint firstItem="5jp-om-VE4" firstAttribute="top" secondItem="wqs-CE-xUk" secondAttribute="bottom" id="mqM-V9-iQ3"/>
                 <constraint firstItem="2bV-ct-gmW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qLi-6l-qk6"/>

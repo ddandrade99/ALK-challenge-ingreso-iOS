@@ -7,25 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB04253928D215C400A14126 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB04253828D215C400A14126 /* Content.swift */; };
+		EB04253D28D2263000A14126 /* MultiGetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB04253C28D2263000A14126 /* MultiGetResponse.swift */; };
+		EB04254328D263C700A14126 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB04254228D263C700A14126 /* MyTableViewCell.swift */; };
+		EB04254628D272CB00A14126 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB04254528D272CB00A14126 /* DetailsViewController.swift */; };
 		EBD4BFBF28CF7C6300DD1EFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4BFBE28CF7C6300DD1EFC /* AppDelegate.swift */; };
 		EBD4BFC128CF7C6300DD1EFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4BFC028CF7C6300DD1EFC /* SceneDelegate.swift */; };
-		EBD4BFC328CF7C6300DD1EFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4BFC228CF7C6300DD1EFC /* ViewController.swift */; };
 		EBD4BFC828CF7C6400DD1EFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD4BFC728CF7C6400DD1EFC /* Assets.xcassets */; };
 		EBD4BFCB28CF7C6400DD1EFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD4BFC928CF7C6400DD1EFC /* LaunchScreen.storyboard */; };
 		EBD4BFD428D0169200DD1EFC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4BFD228D0169200DD1EFC /* SearchViewController.swift */; };
 		EBD4BFD528D0169200DD1EFC /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD4BFD328D0169200DD1EFC /* SearchViewController.xib */; };
+		EBD4BFDA28D10DDB00DD1EFC /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4BFD928D10DDB00DD1EFC /* Service.swift */; };
+		EBD4BFDD28D1210400DD1EFC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4BFDC28D1210400DD1EFC /* Category.swift */; };
+		EBD4BFE028D1278A00DD1EFC /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4BFDF28D1278A00DD1EFC /* TabViewController.swift */; };
+		EBD4BFE428D12DE600DD1EFC /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4BFE228D12DE600DD1EFC /* FavoritesViewController.swift */; };
+		EBD4BFE528D12DE600DD1EFC /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD4BFE328D12DE600DD1EFC /* FavoritesViewController.xib */; };
+		ED2C9098CF425FF3902863ED /* Pods_ALK_challenge_ingreso_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB2963C429BD2A510DC263C /* Pods_ALK_challenge_ingreso_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A24D3CB4EA239791C050D890 /* Pods-ALK-challenge-ingreso-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALK-challenge-ingreso-iOS.release.xcconfig"; path = "Target Support Files/Pods-ALK-challenge-ingreso-iOS/Pods-ALK-challenge-ingreso-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		BD29C4711D3FEC601BFEB1EC /* Pods-ALK-challenge-ingreso-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALK-challenge-ingreso-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ALK-challenge-ingreso-iOS/Pods-ALK-challenge-ingreso-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BDB2963C429BD2A510DC263C /* Pods_ALK_challenge_ingreso_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALK_challenge_ingreso_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB04253828D215C400A14126 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		EB04253C28D2263000A14126 /* MultiGetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiGetResponse.swift; sourceTree = "<group>"; };
+		EB04254228D263C700A14126 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		EB04254528D272CB00A14126 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		EBD4BFBB28CF7C6300DD1EFC /* ALK-challenge-ingreso-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ALK-challenge-ingreso-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD4BFBE28CF7C6300DD1EFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD4BFC028CF7C6300DD1EFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBD4BFC228CF7C6300DD1EFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EBD4BFC728CF7C6400DD1EFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBD4BFCA28CF7C6400DD1EFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBD4BFCC28CF7C6400DD1EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBD4BFD228D0169200DD1EFC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		EBD4BFD328D0169200DD1EFC /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		EBD4BFD928D10DDB00DD1EFC /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		EBD4BFDC28D1210400DD1EFC /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		EBD4BFDF28D1278A00DD1EFC /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		EBD4BFE228D12DE600DD1EFC /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		EBD4BFE328D12DE600DD1EFC /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +53,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2C9098CF425FF3902863ED /* Pods_ALK_challenge_ingreso_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22B515DDBE42C99D79218158 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDB2963C429BD2A510DC263C /* Pods_ALK_challenge_ingreso_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7AF1011C8454685159D480F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD29C4711D3FEC601BFEB1EC /* Pods-ALK-challenge-ingreso-iOS.debug.xcconfig */,
+				A24D3CB4EA239791C050D890 /* Pods-ALK-challenge-ingreso-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EB04254428D2727800A14126 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				EB04254528D272CB00A14126 /* DetailsViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		EBD4BFB228CF7C6300DD1EFC = {
 			isa = PBXGroup;
 			children = (
 				EBD4BFBD28CF7C6300DD1EFC /* ALK-challenge-ingreso-iOS */,
 				EBD4BFBC28CF7C6300DD1EFC /* Products */,
+				E7AF1011C8454685159D480F /* Pods */,
+				22B515DDBE42C99D79218158 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +106,12 @@
 		EBD4BFBD28CF7C6300DD1EFC /* ALK-challenge-ingreso-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				EBD4BFD828D10D7A00DD1EFC /* Service */,
+				EBD4BFDB28D120EA00DD1EFC /* Models */,
+				EBD4BFDE28D1274700DD1EFC /* Tabs */,
 				EBD4BFD628D0169F00DD1EFC /* Search */,
+				EB04254428D2727800A14126 /* Details */,
+				EBD4BFE128D12D7F00DD1EFC /* Favorites */,
 				EBD4BFD728D01FC000DD1EFC /* xcode */,
 				EBD4BFCC28CF7C6400DD1EFC /* Info.plist */,
 			);
@@ -70,6 +123,7 @@
 			children = (
 				EBD4BFD228D0169200DD1EFC /* SearchViewController.swift */,
 				EBD4BFD328D0169200DD1EFC /* SearchViewController.xib */,
+				EB04254228D263C700A14126 /* MyTableViewCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -79,11 +133,45 @@
 			children = (
 				EBD4BFBE28CF7C6300DD1EFC /* AppDelegate.swift */,
 				EBD4BFC028CF7C6300DD1EFC /* SceneDelegate.swift */,
-				EBD4BFC228CF7C6300DD1EFC /* ViewController.swift */,
 				EBD4BFC728CF7C6400DD1EFC /* Assets.xcassets */,
 				EBD4BFC928CF7C6400DD1EFC /* LaunchScreen.storyboard */,
 			);
 			path = xcode;
+			sourceTree = "<group>";
+		};
+		EBD4BFD828D10D7A00DD1EFC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EBD4BFD928D10DDB00DD1EFC /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EBD4BFDB28D120EA00DD1EFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBD4BFDC28D1210400DD1EFC /* Category.swift */,
+				EB04253828D215C400A14126 /* Content.swift */,
+				EB04253C28D2263000A14126 /* MultiGetResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EBD4BFDE28D1274700DD1EFC /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				EBD4BFDF28D1278A00DD1EFC /* TabViewController.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		EBD4BFE128D12D7F00DD1EFC /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				EBD4BFE228D12DE600DD1EFC /* FavoritesViewController.swift */,
+				EBD4BFE328D12DE600DD1EFC /* FavoritesViewController.xib */,
+			);
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBD4BFCF28CF7C6400DD1EFC /* Build configuration list for PBXNativeTarget "ALK-challenge-ingreso-iOS" */;
 			buildPhases = (
+				FD65D21193F5C4F4BE1B376B /* [CP] Check Pods Manifest.lock */,
 				EBD4BFB728CF7C6300DD1EFC /* Sources */,
 				EBD4BFB828CF7C6300DD1EFC /* Frameworks */,
 				EBD4BFB928CF7C6300DD1EFC /* Resources */,
+				0F51D481DDF15D9BCE689CB9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,20 +236,70 @@
 			files = (
 				EBD4BFCB28CF7C6400DD1EFC /* LaunchScreen.storyboard in Resources */,
 				EBD4BFC828CF7C6400DD1EFC /* Assets.xcassets in Resources */,
+				EBD4BFE528D12DE600DD1EFC /* FavoritesViewController.xib in Resources */,
 				EBD4BFD528D0169200DD1EFC /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F51D481DDF15D9BCE689CB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ALK-challenge-ingreso-iOS/Pods-ALK-challenge-ingreso-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ALK-challenge-ingreso-iOS/Pods-ALK-challenge-ingreso-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ALK-challenge-ingreso-iOS/Pods-ALK-challenge-ingreso-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD65D21193F5C4F4BE1B376B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ALK-challenge-ingreso-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EBD4BFB728CF7C6300DD1EFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBD4BFC328CF7C6300DD1EFC /* ViewController.swift in Sources */,
+				EBD4BFDD28D1210400DD1EFC /* Category.swift in Sources */,
 				EBD4BFBF28CF7C6300DD1EFC /* AppDelegate.swift in Sources */,
+				EBD4BFE428D12DE600DD1EFC /* FavoritesViewController.swift in Sources */,
+				EB04254628D272CB00A14126 /* DetailsViewController.swift in Sources */,
+				EB04254328D263C700A14126 /* MyTableViewCell.swift in Sources */,
+				EB04253928D215C400A14126 /* Content.swift in Sources */,
+				EBD4BFDA28D10DDB00DD1EFC /* Service.swift in Sources */,
+				EB04253D28D2263000A14126 /* MultiGetResponse.swift in Sources */,
 				EBD4BFD428D0169200DD1EFC /* SearchViewController.swift in Sources */,
+				EBD4BFE028D1278A00DD1EFC /* TabViewController.swift in Sources */,
 				EBD4BFC128CF7C6300DD1EFC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +434,7 @@
 		};
 		EBD4BFD028CF7C6400DD1EFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD29C4711D3FEC601BFEB1EC /* Pods-ALK-challenge-ingreso-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +462,7 @@
 		};
 		EBD4BFD128CF7C6400DD1EFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A24D3CB4EA239791C050D890 /* Pods-ALK-challenge-ingreso-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
