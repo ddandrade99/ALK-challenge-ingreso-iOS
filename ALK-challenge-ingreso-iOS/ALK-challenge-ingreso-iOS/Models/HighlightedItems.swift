@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Content: Codable {
+struct HighlightedItems: Codable {
     var content: [HighlightItem]
 }
 

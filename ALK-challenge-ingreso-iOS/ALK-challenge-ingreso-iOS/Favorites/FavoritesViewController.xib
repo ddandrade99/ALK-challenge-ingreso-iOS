@@ -27,9 +27,9 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="124"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favoritos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zu5-Ml-Hr1">
-                            <rect key="frame" x="32" y="76" width="350" height="40"/>
+                            <rect key="frame" x="32" y="76" width="350" height="32"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="40" id="gVd-oy-STE"/>
+                                <constraint firstAttribute="height" constant="32" id="gVd-oy-STE"/>
                             </constraints>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                             <nil key="textColor"/>
@@ -38,7 +38,7 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemYellowColor"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="Zu5-Ml-Hr1" secondAttribute="bottom" constant="8" id="5ak-eZ-Ame"/>
+                        <constraint firstAttribute="bottom" secondItem="Zu5-Ml-Hr1" secondAttribute="bottom" constant="16" id="5ak-eZ-Ame"/>
                         <constraint firstAttribute="trailing" secondItem="Zu5-Ml-Hr1" secondAttribute="trailing" constant="32" id="StP-lb-J6g"/>
                         <constraint firstItem="Zu5-Ml-Hr1" firstAttribute="leading" secondItem="ivB-Hm-SNR" secondAttribute="leading" constant="32" id="Ufz-GC-ADY"/>
                         <constraint firstAttribute="height" constant="124" id="f4e-DE-xBT"/>

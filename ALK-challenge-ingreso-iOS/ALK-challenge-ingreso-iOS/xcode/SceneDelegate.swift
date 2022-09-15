@@ -14,8 +14,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        let searchViewController = TabViewController()
-        let navController = UINavigationController(rootViewController: searchViewController)
+        let tabViewController = TabViewController()
+        let navController = UINavigationController(rootViewController: tabViewController)
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = navController
         window?.makeKeyAndVisible()

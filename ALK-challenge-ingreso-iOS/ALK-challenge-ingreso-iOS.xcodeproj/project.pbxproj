@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB04253928D215C400A14126 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB04253828D215C400A14126 /* Content.swift */; };
+		EB04253928D215C400A14126 /* HighlightedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB04253828D215C400A14126 /* HighlightedItems.swift */; };
 		EB04253D28D2263000A14126 /* MultiGetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB04253C28D2263000A14126 /* MultiGetResponse.swift */; };
 		EB04254328D263C700A14126 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB04254228D263C700A14126 /* MyTableViewCell.swift */; };
 		EB04254628D272CB00A14126 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB04254528D272CB00A14126 /* DetailsViewController.swift */; };
+		EB04254828D2780A00A14126 /* MyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB04254728D2780A00A14126 /* MyDetailsView.swift */; };
+		EB04254A28D35D4700A14126 /* newService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB04254928D35D4700A14126 /* newService.swift */; };
 		EBD4BFBF28CF7C6300DD1EFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4BFBE28CF7C6300DD1EFC /* AppDelegate.swift */; };
 		EBD4BFC128CF7C6300DD1EFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD4BFC028CF7C6300DD1EFC /* SceneDelegate.swift */; };
 		EBD4BFC828CF7C6400DD1EFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD4BFC728CF7C6400DD1EFC /* Assets.xcassets */; };
@@ -29,10 +31,12 @@
 		A24D3CB4EA239791C050D890 /* Pods-ALK-challenge-ingreso-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALK-challenge-ingreso-iOS.release.xcconfig"; path = "Target Support Files/Pods-ALK-challenge-ingreso-iOS/Pods-ALK-challenge-ingreso-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		BD29C4711D3FEC601BFEB1EC /* Pods-ALK-challenge-ingreso-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALK-challenge-ingreso-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ALK-challenge-ingreso-iOS/Pods-ALK-challenge-ingreso-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BDB2963C429BD2A510DC263C /* Pods_ALK_challenge_ingreso_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALK_challenge_ingreso_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB04253828D215C400A14126 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		EB04253828D215C400A14126 /* HighlightedItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightedItems.swift; sourceTree = "<group>"; };
 		EB04253C28D2263000A14126 /* MultiGetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiGetResponse.swift; sourceTree = "<group>"; };
 		EB04254228D263C700A14126 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		EB04254528D272CB00A14126 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		EB04254728D2780A00A14126 /* MyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDetailsView.swift; sourceTree = "<group>"; };
+		EB04254928D35D4700A14126 /* newService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newService.swift; sourceTree = "<group>"; };
 		EBD4BFBB28CF7C6300DD1EFC /* ALK-challenge-ingreso-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ALK-challenge-ingreso-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD4BFBE28CF7C6300DD1EFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD4BFC028CF7C6300DD1EFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				EB04254528D272CB00A14126 /* DetailsViewController.swift */,
+				EB04254728D2780A00A14126 /* MyDetailsView.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				EBD4BFD928D10DDB00DD1EFC /* Service.swift */,
+				EB04254928D35D4700A14126 /* newService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -151,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				EBD4BFDC28D1210400DD1EFC /* Category.swift */,
-				EB04253828D215C400A14126 /* Content.swift */,
+				EB04253828D215C400A14126 /* HighlightedItems.swift */,
 				EB04253C28D2263000A14126 /* MultiGetResponse.swift */,
 			);
 			path = Models;
@@ -291,12 +297,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBD4BFDD28D1210400DD1EFC /* Category.swift in Sources */,
+				EB04254828D2780A00A14126 /* MyDetailsView.swift in Sources */,
 				EBD4BFBF28CF7C6300DD1EFC /* AppDelegate.swift in Sources */,
 				EBD4BFE428D12DE600DD1EFC /* FavoritesViewController.swift in Sources */,
 				EB04254628D272CB00A14126 /* DetailsViewController.swift in Sources */,
 				EB04254328D263C700A14126 /* MyTableViewCell.swift in Sources */,
-				EB04253928D215C400A14126 /* Content.swift in Sources */,
+				EB04253928D215C400A14126 /* HighlightedItems.swift in Sources */,
 				EBD4BFDA28D10DDB00DD1EFC /* Service.swift in Sources */,
+				EB04254A28D35D4700A14126 /* newService.swift in Sources */,
 				EB04253D28D2263000A14126 /* MultiGetResponse.swift in Sources */,
 				EBD4BFD428D0169200DD1EFC /* SearchViewController.swift in Sources */,
 				EBD4BFE028D1278A00DD1EFC /* TabViewController.swift in Sources */,

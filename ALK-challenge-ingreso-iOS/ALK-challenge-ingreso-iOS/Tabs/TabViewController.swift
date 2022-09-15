@@ -18,11 +18,13 @@ class TabViewController: UITabBarController {
     }
     
     func setupTabBar(){
+//        let searchNav = UINavigationController(rootViewController: searchViewController)
+//        let favoritesNav = UINavigationController(rootViewController: favoritesViewController)
         self.setViewControllers([searchViewController, favoritesViewController], animated: true)
-        searchViewController.title = "Buscar"
+        searchViewController.title = "Início"
         favoritesViewController.title = "Favoritos"
         guard let items = self.tabBar.items else { return }
-        let images = ["magnifyingglass", "star"]
+        let images = ["house", "heart"]
         for i in 0..<items.count {
             items[i].image = UIImage(systemName: images[i])
         }

@@ -10,13 +10,13 @@ import Foundation
 protocol MultiGetDelegate {
     func updateHighlightedItems(_ service: Service, content: [MultiGetResponse])
 }
- 
+
 final class Service {
-    
+
     let url_base = "https://api.mercadolibre.com"
-    let api_token = "APP_USR-1782731037846423-091414-8b6c8a8967874e22dad765710856b61f-1168864359"
+    let api_token = "APP_USR-1782731037846423-091509-ab9ee2066db7ca4c12ccb6a832ca5cee-1168864359"
     var multiGetDelegate: MultiGetDelegate?
-    
+
     func fetchCategorySearched(category: String) {
         let session = URLSession.shared
         let url = URL(string: "\(url_base)/sites/MLB/domain_discovery/search?limit=1&q=\(category)")
@@ -35,9 +35,9 @@ final class Service {
         }
         task.resume()
     }
-    
+
     func getHighlightsCategory(categoryID: String) {
-        
+
         let url = URL(string: "\(url_base)/highlights/MLB/category/\(categoryID)")
         var request = URLRequest(url: url!)
         request.setValue("Bearer \(self.api_token)", forHTTPHeaderField: "Authentication")
@@ -48,8 +48,8 @@ final class Service {
             if error == nil {
                 guard let result = data else { return }
                 do {
-                    let content = try JSONDecoder().decode(Content.self, from: result)
-                    let itemIDs = self.getItemIDs(content)
+                    let items = try JSONDecoder().decode(HighlightedItems.self, from: result)
+                    let itemIDs = self.getItemIDs(items)
                     self.getItemsFromContent(ContentID: itemIDs)
                 } catch {
                     print(error.localizedDescription)
@@ -59,7 +59,7 @@ final class Service {
         }
         task.resume()
     }
-    
+
     func getItemsFromContent(ContentID: String) {
 
         let url = URL(string: "\(url_base)/items?ids=\(ContentID)")
@@ -83,7 +83,7 @@ final class Service {
         task.resume()
     }
 
-    func getItemIDs(_ content: Content) -> String {
+    func getItemIDs(_ content: HighlightedItems) -> String {
         var ids: String = ""
         for item in content.content {
             ids.append("\(item.id),")

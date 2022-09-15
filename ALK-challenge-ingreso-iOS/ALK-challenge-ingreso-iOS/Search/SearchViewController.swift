@@ -17,18 +17,38 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mySearchBar.delegate = self
+        service.multiGetDelegate = self
+        setupTableView()
+    }
+    
+    func setupTableView(){
         myTableView.delegate = self
         myTableView.dataSource = self
         myTableView.register(MyTableViewCell.self, forCellReuseIdentifier: "cell")
         myTableView.rowHeight = 160
-        service.multiGetDelegate = self
+        for subView in mySearchBar.subviews
+        {
+            for subView1 in subView.subviews
+            {
+
+                if subView1.isKind(of: UITextField.self)
+                {
+                    subView1.backgroundColor = .blue
+                }
+            }
+
+        }
     }
 }
 
 extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print(searchBar.text!)
-        service.fetchCategorySearched(category: searchBar.text!)
+        guard let search = searchBar.text else { return }
+        print("🟢DEBUG🟢 text Input: \(search)")
+        if search.isEmpty {
+            return
+        }
+        service.fetchCategorySearched(category: search)
     }
 }
 
@@ -40,7 +60,7 @@ extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? MyTableViewCell else { return UITableViewCell() }
         let item = items[indexPath.row]
-        cell.setupCell(title: item.body.title, price: item.body.price, imageURL: item.body.pictures[0].secure_url)
+        cell.setupCell(title: item.body.title, price: item.body.price, imageURL: item.body.secureThumbnail)
         
         return cell
     }
@@ -49,7 +69,10 @@ extension SearchViewController: UITableViewDataSource {
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-//        navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: true)
+        let item = items[indexPath.row].body
+        let detailsVC = DetailsViewController(item)
+        self.navigationController?.pushViewController(detailsVC, animated: true)
+        print("🟢DEBUG🟢 item \(indexPath.row) selected: \(item.title)")
     }
 }
 

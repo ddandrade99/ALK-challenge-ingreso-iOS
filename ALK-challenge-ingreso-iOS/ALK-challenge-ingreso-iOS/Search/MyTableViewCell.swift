@@ -12,9 +12,11 @@ class MyTableViewCell: UITableViewCell {
 
     let productImage: UIImageView = {
         let imagem:UIImageView = UIImageView()
-        imagem.contentMode = .scaleToFill
         imagem.translatesAutoresizingMaskIntoConstraints = false
         imagem.backgroundColor = .white
+        imagem.clipsToBounds = true
+        imagem.layer.cornerRadius = 6
+        imagem.contentMode = .scaleAspectFit
         return imagem
     }()
     
@@ -40,7 +42,7 @@ class MyTableViewCell: UITableViewCell {
     
     func setupCell(title: String, price: Double, imageURL: String){
         self.title.text = title
-        self.price.text = "$ \(price)"
+        self.price.text = String(format: "R$ %.2f", price)
         let processor = RoundCornerImageProcessor(cornerRadius: 10)
         let url = URL.init(string: imageURL)
         self.productImage.kf.indicatorType = .activity

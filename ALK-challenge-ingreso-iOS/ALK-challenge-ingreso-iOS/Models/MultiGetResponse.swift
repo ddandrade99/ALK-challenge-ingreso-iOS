@@ -18,8 +18,22 @@ struct ItemFromCategory: Codable {
     let title: String
     let subtitle: String?
     let price: Double
+    let secureThumbnail: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case pictures
+        case title
+        case subtitle
+        case price
+        case secureThumbnail = "secure_thumbnail"
+    }
 }
 
 struct ResultPicture: Codable {
-    let secure_url: String
+    let secureUrl: String
+    
+    enum CodingKeys: String, CodingKey {
+        case secureUrl = "secure_url"
+    }
 }
